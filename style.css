@@ -224,3 +224,13 @@ footer p { color: var(--muted); font-size: 12px; }
   .nav__burger { display: flex; }
   .skills-grid { grid-template-columns: 1fr; gap: 24px; }
 }
+
+.about__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  margin-bottom: 24px;
+  display: block;
+}
