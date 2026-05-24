@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Léon ZHOU</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&display=swap">
+</head>
+
+<body>
+  <nav class="nav" id="nav">
+    <span class="nav__logo">LZ</span>
+    <button class="nav__burger" id="burger"> 
+    <span></span><span></span><span></span>
+    </button>  
+
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="cv.pdf" class="nav__cv" download>CV</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <p class="hero__tag">Première année - Epitech</p>
+    <h1>Léon ZHOU</h1>
+    <p class="hero__sub">Je construis des trucs, je les casse, j'apprends.</p>
+    <div class="hero__btns">
+      <a href="#projects" class="btn">Mes projets</a>
+      <a href="https://github.com/moamoa701" class="btn btn--ghost" target="_blank">GitHub</a>
+    </div>
+  </section>
+  
+  <section class="section" id="about">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Étudiant en première année à Epitech, j'ai choisi cette école pour son approche très pratique et sa pédagogie basée sur la réalisation de projets.</p>
+      <p>Cette première année m'a permis d'explorer de nombreux domaines de l'informatique : les langages de programmation (Python, JavaScript, PHP), l'environnement Linux, le développement web et la gestion de données. Pour la suite de mon parcours, je suis particulièrement attiré par la <strong>data science</strong> et la <strong>cybersécurité</strong>.</p>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="projects">
+    <div class="container">
+    <h2>Projets</h2>
+    <p class="sub">Quelques projets réalisés durant cette année.</p>
+    <div class="grid">
+
+  <article class="card">
+    <h3><a href="https://github.com/moamoa701/projet-Alice_in_Wonderland" target="_blank">projet-Alice_in_Wonderland</a></h3>
+    <p>Un outil pour générer automatiquement des fiches de lecture à partir d'un livre.</p>
+    <span class="tag tag--python">Python</span>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://github.com/moamoa701/Projet-Hack-Juice" target="_blank">Projet-Hack-Juice</a></h3>
+    <p>Capture the flag  (Hack & Juice). Write-ups sur des vulnérabilités OWASP, OSINT, IDOR et propositions de remédiations.</p>
+    <span class="tag tag--security">Sécurité</span>
+  </article>
+
+   <article class="card">
+    <h3><a href="https://github.com/moamoa701/Projet-Next_Buy" target="_blank">Projet-Next_Buy</a></h3>
+    <p>Analyse de plusieurs millions de commandes pour optimiser une stratégie commerciale. EDA + modèles ML prédictifs.</p>
+    <span class="tag tag--jupyter">Jupyter</span>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://github.com/moamoa701/Projet-Tardis" target="_blank">Projet-Tardis</a></h3>
+    <p>Analyse des retards SNCF. Nettoyage de données historiques et modèle de machine learning pour prédire les retards des trains.</p>
+    <span class="tag tag--jupyter">Jupyter</span>
+  </article>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div>
+          <p class="skills-label">Langages</p>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>PHP</li>
+            <li>HTML / CSS / JS</li>
+            <li>Shell</li>
+          </ul>
+        </div>
+        <div>
+          <p class="skills-label">Outils</p>
+          <ul class="skills-list">
+            <li>GitHub</li>
+            <li>Jupyter Notebook</li>
+            <li>Machine Learning (bases)</li>
+            <li>Burp Suite</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:leon.zhou@epitech.eu">leon.zhou@epitech.eu</a></p>
+      <p>Github : <a href="https://github.com/moamoa701" target="_blank">github.com/moamoa701</a></p>
+      <a href="cv.pdf" class="btn" style="margin-top: 24px" download> Télécharger mon CV</a>
+
+      <form class="form" id="contact-form">
+        <input type="text" id="fname" placeholder="Nom" required>
+        <input type="email" id="femail" placeholder="Email" required>
+        <textarea id="fmessage" rows="4" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Léon ZHOU - Epitech 2025 - 2026</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
