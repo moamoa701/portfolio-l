@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Léon ZHOU</title>
+  <title>Léon ZHOU - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&display=swap">
 </head>
 
 <body>
   <nav class="nav" id="nav">
     <span class="nav__logo">LZ</span>
-    <button class="nav__burger" id="burger"> 
+    <button class="nav__burger" id="burger">
       <span></span><span></span><span></span>
-    </button>  
+    </button>
     <ul class="nav__links" id="nav-links">
       <li><a href="#about">À propos</a></li>
       <li><a href="#projects">Projets</a></li>
@@ -26,11 +28,12 @@
   </nav>
 
   <section class="hero">
-    <p class="hero__tag">Première année - Epitech</p>
+    <p class="hero__tag">Deuxième année - ESGI · En recherche d'alternance</p>
     <h1>Léon ZHOU</h1>
     <p class="hero__sub">Je construis des trucs, je les casse, j'apprends.</p>
     <div class="hero__btns">
       <a href="#projects" class="btn">Mes projets</a>
+      <a href="#contact" class="btn btn--ghost">Me contacter</a>
       <a href="https://github.com/moamoa701" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </section>
@@ -39,8 +42,12 @@
     <div class="container">
       <h2>À propos</h2>
       <img src="photo.webp" alt="Photo de Léon ZHOU" class="about__photo">
-      <p>Étudiant en première année à Epitech, j'ai choisi cette école pour son approche très pratique et sa pédagogie basée sur la réalisation de projets.</p>
-      <p>Cette première année m'a permis d'explorer de nombreux domaines de l'informatique : les langages de programmation (Python, JavaScript, PHP), l'environnement Linux, le développement web et la gestion de données. Pour la suite de mon parcours, je suis particulièrement attiré par la <strong>data science</strong> et la <strong>cybersécurité</strong>.</p>
+      <p>Étudiant en deuxième année à l'ESGI, je suis à la recherche d'une <strong>alternance</strong> dans le domaine
+        de l'informatique. J'ai effectué ma première année à Epitech, une école basée sur la réalisation de projets,
+        avant de rejoindre l'ESGI pour poursuivre mon cursus.</p>
+      <p>Ma première année m'a permis d'explorer de nombreux domaines de l'informatique : les langages de programmation
+        (Python, JavaScript, PHP), l'environnement Linux, le développement web et la gestion de données. Aujourd'hui, je
+        suis particulièrement attiré par la <strong>data science</strong> et la <strong>cybersécurité</strong>.</p>
     </div>
   </section>
 
@@ -48,53 +55,67 @@
   <section class="section section--dark" id="projects">
     <div class="container">
       <h2>Projets</h2>
-      <p class="sub">Quelques projets réalisés durant cette année.</p>
+      <p class="sub">Quelques projets réalisés durant ma première année à Epitech.</p>
       <div class="grid">
 
         <article class="card">
-          <h3><a href="https://github.com/moamoa701/projet-Alice_in_Wonderland" target="_blank" rel="noopener noreferrer">projet-Alice_in_Wonderland</a></h3>
+          <h3><a href="https://github.com/moamoa701/projet-Alice_in_Wonderland" target="_blank"
+              rel="noopener noreferrer">projet-Alice_in_Wonderland</a></h3>
           <p>Un outil pour générer automatiquement des fiches de lecture à partir d'un livre.</p>
           <details class="card__reflection">
             <summary>Ma réflexion</summary>
-           <p> La partie la plus complexe était de parser le texte brut du livre et d'en extraire les informations pertinentes automatiquement.
-            J'ai dû apprendre à manipuler les chaînes de caractères en Python et gérer les cas particuliers (ponctuation, chapitres mal formatés). </p>
- 
+            <p> La partie la plus complexe était de parser le texte brut du livre et d'en extraire les informations
+              pertinentes automatiquement.
+              J'ai dû apprendre à manipuler les chaînes de caractères en Python et gérer les cas particuliers
+              (ponctuation, chapitres mal formatés). </p>
 
-           </details>
+
+          </details>
           <span class="tag tag--python">Python</span>
         </article>
 
         <article class="card">
-          <h3><a href="https://github.com/moamoa701/Projet-Hack-Juice" target="_blank" rel="noopener noreferrer">Projet-Hack-Juice</a></h3>
-          <p>Capture the flag (Hack & Juice). Write-ups sur des vulnérabilités OWASP, OSINT, IDOR et propositions de remédiations.</p>
+          <h3><a href="https://github.com/moamoa701/Projet-Hack-Juice" target="_blank"
+              rel="noopener noreferrer">Projet-Hack-Juice</a></h3>
+          <p>Capture the flag (Hack & Juice). Write-ups sur des vulnérabilités OWASP, OSINT, IDOR et propositions de
+            remédiations.</p>
           <details class="card__reflection">
             <summary>Ma réflexion</summary>
-            <p>C'était mon premier vrai CTF. Au début je ne savais pas par où commencer face à une vulnérabilité. J'ai appris à utiliser Burp Suite pour intercepter
-            les requêtes HTTP et comprendre comment fonctionne une faille en pratique. Le plus enrichissant : rédiger les write-ups m'a forcé à vraiment comprendre 
-            ce que je faisais, pas juste trouver le flag. </p>
+            <p>C'était mon premier vrai CTF. Au début je ne savais pas par où commencer face à une vulnérabilité. J'ai
+              appris à utiliser Burp Suite pour intercepter
+              les requêtes HTTP et comprendre comment fonctionne une faille en pratique. Le plus enrichissant : rédiger
+              les write-ups m'a forcé à vraiment comprendre
+              ce que je faisais, pas juste trouver le flag. </p>
 
           </details>
           <span class="tag tag--security">Sécurité</span>
         </article>
 
         <article class="card">
-          <h3><a href="https://github.com/moamoa701/Projet-Next_Buy" target="_blank" rel="noopener noreferrer">Projet-Next_Buy</a></h3>
-          <p>Analyse de plusieurs millions de commandes pour optimiser une stratégie commerciale. EDA + modèles ML prédictifs.</p>
+          <h3><a href="https://github.com/moamoa701/Projet-Next_Buy" target="_blank"
+              rel="noopener noreferrer">Projet-Next_Buy</a></h3>
+          <p>Analyse de plusieurs millions de commandes pour optimiser une stratégie commerciale. EDA + modèles ML
+            prédictifs.</p>
           <details class="card__reflection">
             <summary>Ma réflexion</summary>
-            <p>Travailler sur un dataset de plusieurs millions de lignes m'a confronté à des problèmes de performance que je n'avais jamais rencontrés. 
-            Pandas ramait, j'ai dû optimiser mes traitements et mieux choisir mes types de données. C'est ce projet qui m'a donné envie d'aller plus loin en data science.</p>
+            <p>Travailler sur un dataset de plusieurs millions de lignes m'a confronté à des problèmes de performance
+              que je n'avais jamais rencontrés.
+              Pandas ramait, j'ai dû optimiser mes traitements et mieux choisir mes types de données. C'est ce projet
+              qui m'a donné envie d'aller plus loin en data science.</p>
 
           </details>
           <span class="tag tag--jupyter">Jupyter</span>
         </article>
 
         <article class="card">
-          <h3><a href="https://github.com/moamoa701/Projet-Tardis" target="_blank" rel="noopener noreferrer">Projet-Tardis</a></h3>
-          <p>Analyse des retards SNCF. Nettoyage de données historiques et modèle de machine learning pour prédire les retards des trains.</p>
+          <h3><a href="https://github.com/moamoa701/Projet-Tardis" target="_blank"
+              rel="noopener noreferrer">Projet-Tardis</a></h3>
+          <p>Analyse des retards SNCF. Nettoyage de données historiques et modèle de machine learning pour prédire les
+            retards des trains.</p>
           <details class="card__reflection">
             <summary>Ma réflexion</summary>
-            <p>La partie la plus difficile était le nettoyage des données, certaines colonnes avaient 40% de valeurs manquantes. J'ai appris à utiliser pandas pour imputer les données et à mieux documenter mon code.</p>
+            <p>La partie la plus difficile était le nettoyage des données, certaines colonnes avaient 40% de valeurs
+              manquantes. J'ai appris à utiliser pandas pour imputer les données et à mieux documenter mon code.</p>
           </details>
           <span class="tag tag--jupyter">Jupyter</span>
         </article>
@@ -106,8 +127,12 @@
   <section class="section" id="evolution">
     <div class="container">
       <h2>Mon évolution</h2>
-      <p>En début d'année, je ne connaissais que les bases de Python. Au fil des projets, j'ai appris à utiliser Linux au quotidien, à versionner mon code avec Git, et à structurer une vraie démarche de résolution de problèmes.</p>
+      <p>Au début de mon parcours, je ne connaissais que les bases de Python. Au fil des projets, j'ai appris à utiliser
+        Linux au quotidien, à versionner mon code avec Git, et à structurer une vraie démarche de résolution de
+        problèmes.</p>
       <p>Le plus grand changement : avant je cherchais "la réponse", maintenant je comprends pourquoi ça marche.</p>
+      <p>Aujourd'hui, je veux mettre ces bases en pratique en entreprise, en alternance, pour progresser sur des projets
+        réels.</p>
     </div>
   </section>
 
@@ -119,7 +144,8 @@
 
         <article class="card">
           <h3>Hub Epitech</h3>
-          <p>Participation à des ateliers et événements organisés par le Hub : conférences, association POC (blockchain), Job meeting (rencontres avec des professionnels).</p>
+          <p>Participation à des ateliers et événements organisés par le Hub : conférences, association POC
+            (blockchain), Job meeting (rencontres avec des professionnels).</p>
           <span class="tag tag--security">Événement</span>
         </article>
       </div>
@@ -156,8 +182,10 @@
   <section class="section section--dark" id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Email : <a href="mailto:leon.zhou@epitech.eu">leon.zhou@epitech.eu</a></p>
-      <p>Github : <a href="https://github.com/moamoa701" target="_blank" rel="noopener noreferrer">github.com/moamoa701</a></p>
+      <p>Je recherche une alternance. N'hésitez pas à me contacter.</p>
+      <p>Email : <a href="mailto:zleon7066@gmail.com">zleon7066@gmail.com</a></p>
+      <p>Github : <a href="https://github.com/moamoa701" target="_blank"
+          rel="noopener noreferrer">github.com/moamoa701</a></p>
       <a href="cv.pdf" class="btn" style="margin-top: 24px" download>Télécharger mon CV</a>
 
       <form class="form" id="contact-form">
@@ -172,10 +200,11 @@
 
   <footer>
     <div class="container">
-      <p>Léon ZHOU - Epitech 2025 - 2026</p>
+      <p>Léon ZHOU - Portfolio 2026</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
